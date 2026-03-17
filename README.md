@@ -1,1 +1,3 @@
-# gh-bestpractices
+# gh-action bestpractices
+
+Creating github action workflow.
