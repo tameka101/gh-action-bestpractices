@@ -1,0 +1,22 @@
+#This is my first action workflow
+ 
+name: First Workflow
+
+#Controls when the workflow run
+on: workflow_dispatch
+jobs: 
+
+#Workflow is made up of jobs that run seqentially
+  first-job:
+  
+  #The type of run the job will run
+    runs-on: ubuntu-latest
+
+    #One step with two sequence tasks will execute as part of the job
+    steps:
+       # Runs a single command using the runners shell
+      - name: Print greeting
+        run: echo "Hello World"
+       # Runs a single command using the runners shell
+      - name: Print goodbye
+        run: echo "Done - bye!"
